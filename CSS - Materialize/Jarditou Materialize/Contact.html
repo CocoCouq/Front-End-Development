@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/materialize/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/materialize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -48,6 +48,7 @@
     <section>
         <form action="http://bienvu.net/script.php" method="POST">
             <fieldset class="green lighten-5">
+<!-- COORDONNEES -->
                 <legend class="green lighten-4 card-panel center-align">
                     <h3>Coordonnées</h3>
                 </legend>
@@ -66,13 +67,14 @@
                 <section class="row">
                     <!-- DATE -->
                     <div class="col l3 offset-l2 m4 offset-m1 s7">
-                        <label class="flow-text" for="Date de naissance">Date de Naissances<sup class="red-text">*</sup></label><input type="date" name="Date" required title="Renseigner votre Date de naissance" class="grey-text">
+                      <label class="flow-text" for="datenais">Date de naissance</label>
+                      <input type="text" name="datenais" class="datepicker" placeholder="Sélectionner une date" required/>
                     </div>
                     <!-- SEXE -->
                     <div class="col l3 offset-l2 m4 offset-m2 s4 offset-s1">
                         <p>
                           <label>
-                              <input  class="grey-text" name="Sexe" type="radio" value="H"/>
+                              <input name="Sexe" type="radio" value="H" required/>
                               <span>Homme<sup class="red-text">*</sup></span>
                           </label>
                        </p>
@@ -87,11 +89,13 @@
                 <div class="divider section green lighten-5"></div>
                 <section class="row">
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
+                      <!-- ADRESSE -->
                         <label class="flow-text" for="Adresse">Adresse</label><input type="text" name="Adresse" title="Adresse">
                     </div>
                     <div class="hide-on-med-and-up col s12">
                         <label class="" for="Complement">Complement d'adresse</label><input type="text" name="Complement" title="Complement">
                     </div>
+                    <!-- CODE POSTAL -->
                     <div class="col l3 offset-l2 m4 offset-m1 s5">
                         <label class="flow-text" for="Code postal">Code postal</label><input type="text" name="Code postal" pattern="[0-9]+" title="Code postal (exemple: 75000)">
                     </div>
@@ -99,6 +103,7 @@
                         <label class="flow-text" for="Ville">Ville</label><input type="text" name="Ville" title="Ville">
                     </div>
                 </section>
+                <!-- EMAIL -->
                 <div class="divider section green lighten-5"></div>
                 <section class="row">
                     <div class="col l4 offset-l4 m6 offset-m3 s8 offset-s2">
@@ -107,49 +112,65 @@
                 </section>
             </fieldset>
             <div class="divider section blue-grey darken-3"></div>
+<!-- DEMANDE -->
+
             <fieldset class="green lighten-5">
               <legend class="green lighten-4 card-panel center-align">
                   <h3>Votre demande</h3>
               </legend>
-                <p class="red-text">* Ces champs sont obligatoires</p>
-                <label class="black-text" for="Sujet">Sujet<sup class="red-text">*</sup></label>
-                <select name="Sujet" size="1" required title="Selectionner un sujet">
-                    <option value="Mes commandes">Mes commandes</option>
-                    <option value="Question">Question sur produit</option>
-                    <option value="Réclamation">Réclamation</option>
-                    <option value="Autres">Autres</option>
-                </select>
-                <p>
-                    <label class="black-text" for="Questions">Questions<sup class="red-text">*</sup></label>
-                </p>
-                <textarea name="Questions" required title="Remplissez le champs des questions"></textarea>
+              <section class="row">
+                  <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
+              </section>
+              <section class="row">
+                <div class="input-field col l3 offset-l2 m4 offset-m1 s5">
+                    <select>
+                        <option value="0" disabled selected>Sujet</option>
+                        <option value="1">Commandes</option>
+                        <option value="2">SAV</option>
+                        <option value="3">Autres</option>
+                    </select>
+                </div>
+              </section>
+              <div class="row">
+                  <div class="input-field col l8 offset-l2 m10 offset-m1 s12">
+                      <textarea id="textarea1" class="materialize-textarea" required></textarea>
+                      <label for="textarea1">Message</label>
+                  </div>
+              </div>
             </fieldset>
-            <p>
-                <input class="black-text" type="checkbox" name="Acceptation" value="Accpete" required title="Veuillez accepter le traitement du formulaire"><label for="Accepte Form">J'accepte le traitement informatique de ce formulaire.</label>
-            </p>
-            <section>
-                <input type="submit" value="Envoyer" title="Envoyer">
-                <input type="reset" value="Annuler" title="Annuler">
+                <p class="row">
+                    <label class="col offset-l2 offset-m1 red-text">
+                        <input type="checkbox" name="validation" required/>
+                        <span>J'accepte le traitement de ce formulaire<sup>*</sup></span>
+                    </label>
+                </p>
+            <section class="section row">
+              <button class="btn waves-effect waves-light col l2 offset-l3 m3 offset-m2 s5 offset-s1" type="submit" name="action">
+                  Envoyer<i class="material-icons right">send</i>
+              </button>
+              <button class="red btn waves-effect waves-light col l2 offset-l2 m3 offset-m2 s4 offset-s1" type="reset" name="action">
+                  Annuler<i class="material-icons right">clear</i>
+              </button>
             </section>
         </form>
     </section>
     <!-- FOOTER -->
         <footer>
             <nav class="green lighten-5 z-depth-2 row  hide-on-med-and-down">
-                <ul class="col offset-s1">
-                    <li>
+                <ul class="row">
+                    <li class="col l2 offset-l2 center-align">
                         <a class="grey-text" href="#">Mentions légales</a>
                     </li>
-                    <li>
+                    <li class="col l2 offset-l1 center-align">
                         <a class="grey-text" href="#">Horaires</a>
                     </li>
-                    <li>
+                    <li class="col l2 offset-l1 center-align">
                         <a class="grey-text" href="#">Plan du site</a>
                     </li>
                 </ul>
             </nav>
         </footer>
     </body>
-    <script src="assets/materialize/js/materialize.js"></script>
+    <script src="assets/js/materialize.js"></script>
     <script src="assets/js/index.js"></script>
     </html>
