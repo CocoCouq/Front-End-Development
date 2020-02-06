@@ -1,0 +1,363 @@
+/*
+                                        *GENERAL*
+*/
+body
+{
+    margin: 5px;
+    font-family: sans-serif;
+    cursor: default;
+}
+/* Display Flex pour afficher le slogan a coté */
+header
+{
+    display: flex;
+}
+nav
+{
+    min-height: 50px;
+    background-color: black;
+    display: flex;
+    text-indent: 0px;
+    padding: 5px;
+    text-align: center;
+}
+footer
+{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    text-indent: 15px;
+}
+.TitreCadre /*titres de pages*/
+{
+    text-shadow: 1px 6px 12px grey
+}
+#hrfooter /*<hr> body-footer*/
+{
+    display: none;
+}
+#hracceuil /*<hr> nav-body*/
+{
+    color: lightgrey;
+    background-color: #363636;
+    display: flex;
+    float: left;
+    width: 100%;
+    height: 4px;
+}
+
+
+
+
+/*
+                                        *LOGO - SLOGAN*
+*/
+#Logosec /*section avec le logo*/
+{
+    width: 45%;
+}
+#logo /*image du logo*/
+{
+    width: 55%;
+}
+#slogan
+{
+    color: #252525;
+    text-shadow: 7px 7px 7px #A0A0A0, 6px 6px 1px #303030, 5px 5px 1px #303030, 4px 4px 1px #282828, 3px 3px 3px #282828, 2px 2px 1px #212121, 1px 1px 1px black, 0px 0px 1px black;
+    width: 55%;
+    font-size: 250%;
+    font-weight: normal;
+    margin-top: 1%;
+    margin-right: 10%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+/*
+                                        *MENU PRINCIPAL - FOOTER*
+*/
+.listeP /*liste de pages*/
+{
+    display : inline-block;
+}
+.liensP  /*liens de pages*/
+{
+    color: white;
+    text-decoration: solid;
+    vertical-align: middle;
+}
+#Menu /*section avec liens du menu*/
+{
+    font-size: 130%;
+    font-weight: 350;
+}
+#pageactu /*liens de la page dans menu*/
+{
+    border: 1.5px solid #202020;
+    border-style: outset;
+    padding: 5px;
+    background-image: url(asset/images/noir.jpg);
+    text-shadow: 0 0 3px C0C0C0;
+    border-top-left-radius: 10% 20%;
+    border-top-right-radius: 10% 20%;
+    border-bottom-right-radius: 10% 20%;
+    border-bottom-left-radius: 10% 20%;
+}
+.menuprin /*différents éléments du menu*/
+{
+    border: 1px solid #303030;
+    border-style: outset;
+    padding: 5px;
+    background-image: url(../images/noir4.jpg);
+    text-shadow: 0 0 3px C0C0C0;
+    border-top-left-radius: 10% 20%;
+    border-top-right-radius: 10% 20%;
+    border-bottom-right-radius: 10% 20%;
+    border-bottom-left-radius: 10% 20%;
+}
+.menuprin:hover, #pageactu:hover
+{
+    color: white;
+    text-decoration: inherit;
+    background-image: url(../images/noir2.jpg);
+}
+.menuprin:active, #pageactu:active
+{
+    border-style: inset;
+    background-image: url(../images/noir1.jpg);
+}
+#Mentions
+{
+    margin-left: -4%;
+}
+.MentFoot /*liens footer*/
+{
+    font-size: 80%;
+    margin-top : 4%;
+}
+
+
+
+
+/*
+                                        *CORPS ACCEUIL*
+*/
+#cpsAcc /*corps acceuil*/
+{
+    display: flex;
+    width: 100%;
+}
+.PAcceuil /*paragraphes acceuil*/
+{
+    margin-left: 7px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+.ParagTit /*titres des paragraphes acceuil*/
+{
+    font-family: sans-serif;
+}
+#ColRig
+{
+    color: #005050;
+    background-color: #F5F5F5;
+    width: 65%;
+    flex-flow: column;
+    margin-bottom: 1%;
+    border: 2.5px solid lightgrey;
+    border-style: ridge;
+    text-align: center;
+}
+#ColLef
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+
+
+/*
+                                        *TABLEAU DES PRODUITS*
+*/
+table /*tableau produits*/
+{
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+td
+{
+    width: 1%;
+    text-align: center;
+
+}
+td:not(.ref) /*corps tableau*/
+{
+    border: 1px solid lightgrey;
+    border-style: inset;
+}
+thead /*titres collones*/
+{
+    border: 1px solid lightgrey;
+    color: white;
+    background-image: url(../images/noir3.jpg);
+    width: 10%;
+    font-size: 170%;
+    font-family: Chalkduster, sans-serif;
+    text-shadow: 4px 3px black;
+}
+
+.photo:hover /*photo produits*/
+{
+    width: 160%;
+    cursor: none;
+}
+.ref
+{
+    background-color: #F5F5F5;
+    border: 1px solid lightgrey;
+    border-style: groove;
+}
+.ref::selection
+{
+  color: blue;
+}
+
+
+
+
+
+/*
+                                        *CORPS FORMULAIRE*
+*/
+fieldset
+{
+    border-left: 4px solid silver;
+    border-left-style: outset;
+    border-bottom: 1px solid silver;
+    border-bottom-left-radius: 25% 25%;
+    text-indent: 4em;
+    background-color: lightgrey;
+    box-shadow: 10px 5px 5px silver;
+    width: 500px;
+}
+label
+{
+    font-size: 130%;
+    font-weight: 400;
+}
+#stobligatoires /*"*Ces zones sont obligatoires"*/
+{
+    font-size: 80%;
+    color: red;
+}
+.obligatoires /*astérisque obligatoire*/
+{
+    font-size: 100%;
+    color: red;
+}
+.Legende /*titres fieldset*/
+{
+    font-family: Chalkduster, sans-serif;
+    font-variant: small-caps;
+    font-size: 280%;
+    text-shadow: 5px 0 5px grey;
+}
+input:not(.envform)
+{
+    margin-left: 10px;
+    background-color: silver;
+    border-style: groove;
+    color: #005050;
+    text-indent: 8px;
+}
+.Radio /*Masculin-Feminin*/
+{
+    margin-left: 2.5em;
+    cursor: pointer
+}
+#selectionner /*selection du sujet*/
+{
+    background-color: silver;
+    cursor: pointer;
+}
+#Area /*'Votre demande'*/
+{
+    overflow: hidden;
+    margin-left: 2.5em;
+    margin-bottom: 6%;
+    background-color: silver;
+    border-style: groove;
+    color: #005050;
+}
+
+
+
+
+/*
+                                        *ENVOYER FORMULAIRE*
+*/
+#checkbox /*input checkbox*/
+{
+    cursor: pointer;
+}
+#Textaccept /*label input checkbox*/
+{
+    margin-bottom: 1%;
+    text-indent: 10px;
+    font-size: 90%;
+}
+.envform /*input Envoyer-Annuler*/
+{
+    font-size: 120%;
+    margin-left: 8%;
+    color: #7451eb;
+    border-top-left-radius: 10% 20%;
+    border-bottom-left-radius:10% 20%;
+    border-top-right-radius: 10% 20%;
+    border-bottom-right-radius: 10% 20%;
+    border: 2px solid #F5F5F5;
+    border-style: outset;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+#formend /*section Envoyer-Annuler*/
+{
+    width: 500px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+#envoyer /*input Envoyer*/
+{
+    background-color: #7451EB;
+    border-color: #7451EB;
+    color: white;
+    border-style: outset;
+}
+#envoyer:hover
+{
+    border-style: inset;
+}
+#envoyer:active
+{
+    background-color: #8970EB;
+    border: 3px solid #8970EB;
+    border-style: inset;
+}
+#annuler:hover /*input Annuler*/
+{
+    background-color: #7451EB;
+    color: white;
+    border-color: #7451EB;
+    border-style: inset;
+}
+#annuler:active
+{
+    background-color: #8970EB;
+    color: white;
+    border-color: #8970EB;
+    border: 3px solid #8970EB;
+    border-style: inset;
+}

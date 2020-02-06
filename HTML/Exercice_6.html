@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+      <section>
+        <h1>Nous lançons une enquete</h1>
+        <p>merci de repondre</p>
+      </section>
+      <form action="http://bienvu.net/script.php" method="post">
+        <fieldset>
+          <legend>Vos Coordonnées</legend>
+          <p><label for="Nom">Nom  </label><input type="text" name="Nom"></p>
+          <p><label for="Prenom">Prénom  </label><input type="text" name="Prenom"></p>
+          <p><label for="Date">Date de naissance  </label><input type="date" name="Date"></p>
+          <p><label for="Adresse">Adresse  </label><input type="text" name="Adresse"></p>
+          <p><label for="Ville">Ville  </label><input type="text" name="Ville"></p>
+          <p><label for="Email">Email  </label><input type="email" name="Email"></p>
+        </fieldset>
+        <fieldset>
+          <label for="Sexe">Sexe</label>
+          <input type="radio" name="Sexe" value="Féminin" required class="Radio"> Féminin
+          <input type="radio" name="Sexe" value="Masculin" required class="Radio"> Masculin
+        </fieldset>
+        <section>
+          <select name="Emploi">
+            <option value="Dev">Developpeur</option>
+            <option value="UX">UX Designeur</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </section>
+        <p>
+          <label for="Autre">Précisez  </label><input type="text" name="Autre">
+        </P>
+        <section>
+          <select name="Salaire">
+            <option value=">2000">>2000</option>
+            <option value=">2000"><2000</option>
+          </select>
+        </section>
+        <p>
+          <label for="Annee">En quelle année avez vous suivi votre formation ?</label>
+          <input type="text" name="Annee">
+        </p>
+        <section>
+          <textarea name="Comm" rows="12" cols="60" placeholder="Vos commentaires"></textarea>
+        </section>
+        <section>
+          <input type="submit" name="Send">
+          <input type="reset" name="Reset">
+        </section>
+      </form>
+  </body>
+</html>

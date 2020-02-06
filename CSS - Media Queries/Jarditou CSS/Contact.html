@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/CSS/Jarditou.css">
+    <link rel="stylesheet" href="assets/CSS/media.css">
+    <title>Produits</title>
+</head>
+<body>
+    <header>
+        <section id"Logosec">
+            <img id="logo" src="assets/images/jarditou_logo2.png" width="35%" height="auto" alt="Logo Jarditou">
+        </section>
+        <p id="slogan" title="Notre devise">
+            TOUT LE JARDIN
+        </p>
+    </header>
+    <nav>
+        <ul id="Menu">
+            <li class="listeP">
+                <a href="Index.html" title="Accueil" id="pageactu" class="liensP">Accueil</a>
+            </li>
+            <li class="listeP">
+                <a href="Tableau.html" title="Produits" class="menuprin liensP">Produits</a>
+            </li>
+            <li class="listeP">
+                <a href="#" title="Contact" class="menuprin liensP">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img src="assets/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!">
+    </section>
+    <h1 class="TitreCadre">
+        Contact
+    </h1><hr id="hracceuil">
+    <p id="stobligatoires"> * Ces zones sont obligatoires </p>
+    <section>
+        <form action="http://bienvu.net/script.php" method="POST">
+            <fieldset>
+                <legend class="Legende">
+                    Coordonnées
+                </legend>
+                <p>
+                    <article><label for="nom">Nom<sup class="obligatoires">*</sup>  </label><input type="text" name="nom" required title="Renseigner votre nom"></article>
+                    <article><label for="prénom">Prénom<sup class="obligatoires">*</sup>  </label><input type="text" name="prénom" required title="Renseigner votre prénom"></article>
+                </p>
+                <section>
+                    <label for="Sexe">Sexe<sup class="obligatoires">*</sup>  </label>
+                    <input type="radio" name="Sexe" value="Féminin" required class="Radio"> Féminin
+                    <input type="radio" name="Sexe" value="Masculin" required class="Radio"> Masculin
+                </section>
+                <p>
+                    <label for="Date de naissance">Date de Naissances<sup class="obligatoires">*</sup>  </label><input type="date" name="Date" value="01-01-2000" required title="Renseigner votre Date de naissance">
+                </p>
+                <section>
+                    <article><label for="Code postal">Code postal  </label><input type="text" name="Code postal" pattern="[0-9]+" title="Code postal (exemple: 75000)"></article>
+                    <article><label for="Adresse">Adresse  </label><input type="text" name="Adresse" title="Adresse"></article>
+                    <article><label for="Ville">Ville  </label><input type="text" name="Ville" title="Ville"></article>
+                    <article><label for="Email">Email<sup class="obligatoires">*</sup>  <input type="email" required title="Renseigner votre Email" class="endfield"></article>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend  class="Legende">
+                    Votre demande
+                </legend>
+                <label for="Sujet">Sujet<sup class="obligatoires">*</sup>  </label>
+                <select name="Sujet" size="1" required title="Selectionner un sujet" id="selectionner">
+                    <option value="Mes commandes"> Mes commandes</option>
+                    <option value="Question">Question sur produit</option>
+                    <option value="Réclamation">Réclamation</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                <p>
+                    <label for="Questions">Questions<sup class="obligatoires">*</sup></label>
+                </p>
+                <textarea name="Questions" cols="50" rows="10" required title="Remplissez le champs des questions" id="Area"></textarea>
+            </fieldset>
+            <p>
+                <input type="checkbox" name="Acceptation" value="Accpete" required title="Veuillez accepter le traitement du formulaire" id="checkbox"><label for="Accepte Form" id="Textaccept">J'accepte le traitement informatique de ce formulaire.</label>
+            </p>
+            <section id="formend">
+                <input type="submit" value="Envoyer" title="Envoyer" class="envform" id="envoyer">
+                <input type="reset" value="Annuler" title="Annuler" class="envform" id="annuler">
+            </section>
+        </form>
+    </section>
+    <hr id="hrfooter">
+    <footer>
+        <ul id="Mentions">
+            <li class="listeP">
+                <a href="Mentions.html" title="Mentions" class="MentFoot liensP">Mentions légales</a>
+            </li>
+            <li class="listeP">
+                <a href="Horaires.html" title="Horaires" class="MentFoot liensP">Horaires</a>
+            </li>
+            <li class="listeP">
+                <a href="Plan.html" title="Plan" class="MentFoot liensP">Plan du site</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

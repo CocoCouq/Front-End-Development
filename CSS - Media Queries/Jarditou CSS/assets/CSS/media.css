@@ -1,0 +1,483 @@
+/*
+                                        *GENERAL*
+*/
+/*
+                                                        MAX 1000px
+*/
+@media screen and (max-width: 1000px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 90%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 90%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 225%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 180%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 95%;
+    }
+    #slogan
+    {
+        font-size: 170%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 70%;
+    }
+    .Mentions
+    {
+        margin-top: 1%;
+    }
+}
+/*
+                                                        MAX 870px
+*/
+@media screen and (max-width: 870px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 85%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 85%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 220%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 175%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 90%;
+    }
+    #slogan
+    {
+        font-size: 165%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 85%;
+    }
+    thead
+    {
+        font-size: 150%;
+    }
+}
+
+/*
+                                                        MAX 780px
+*/
+@media screen and (max-width: 780px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 85%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 80%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 210%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 170%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 85%;
+    }
+    #slogan
+    {
+        margin-bottom: 1%;
+        font-size: 160%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+        #ColRig
+    {
+        width: 100%;
+    }
+    thead
+    {
+        font-size: 130%;
+    }
+}
+
+/*
+                                                        MAX 690px
+*/
+@media screen and (max-width: 690px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 85%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 75%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 205%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 165%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 80%;
+    }
+    #slogan
+    {
+        font-size: 155%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+        #ColRig
+    {
+        width: 120%;
+    }
+        thead
+    {
+        font-size: 120%;
+    }
+}
+
+/*
+                                                        MAX 580px
+*/
+@media screen and (max-width: 580px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 85%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 75%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 200%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 160%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 80%;
+    }
+    #slogan
+    {
+        font-size: 150%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 160%;
+    }
+    thead
+    {
+        font-size: 110%;
+    }
+}
+
+/*
+                                                        MAX 500px
+*/
+@media screen and (max-width: 500px)
+{
+    .listeP /*liens de pages*/
+    {
+    font-size: 85%;
+    }
+    .MentFoot /*liens footer*/
+    {
+    font-size: 70%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+    font-size: 195%;
+    margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+    font-size: 155%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+    font-size: 75%;
+    }
+    #slogan
+    {
+    font-size: 145%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+    width: 190%;
+    }
+    thead
+    {
+    font-size: 100%;
+    }
+}
+
+/*
+                                                        MAX 400px
+*/
+@media (max-width: 400px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 80%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 65%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 190%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 145%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 70%;
+    }
+    #slogan
+    {
+        font-size: 140%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 210%;
+    }
+    thead
+    {
+        font-size: 90%;
+    }
+}/*
+                                                        MAX 350px
+*/
+@media screen and (max-width: 350px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 70%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 55%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 180%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 135%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 65%;
+    }
+    #slogan
+    {
+        font-size: 135%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 250%;
+    }
+    thead
+    {
+        font-size: 90%;
+    }
+}
+
+/*
+                                                        MAX 325px
+*/
+@media screen and (max-width: 325px)
+{
+    .listeP /*liens de pages*/
+    {
+        font-size: 65%;
+    }
+    .MentFoot /*liens footer*/
+    {
+        font-size: 50%;
+    }
+    .TitreCadre /*titres de pages*/
+    {
+        font-size: 170%;
+        margin-top: 3%;
+    }
+    .ParagTit /*titres des paragraphes*/
+    {
+        font-size: 130%;
+    }
+    .PAcceuil /*paragraphes acceuil*/
+    {
+        font-size: 55%;
+    }
+    #slogan
+    {
+        font-size: 130%;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #ColRig
+    {
+        width: 270%;
+    }
+    thead
+    {
+        font-size: 90%;
+    }
+}
+
+
+
+
+/*
+                                        *ACCEUIL COLLONE DROITE*
+*/
+/*
+                                                        Display none Col R
+*/
+@media screen and (max-width: 768px)
+{
+    #ColRig
+    {
+        display: none;
+    }
+}
+/*
+                                                        min 1300px
+*/
+@media screen and (min-width: 1300px)
+{
+    #ColRig
+    {
+        width: 60%;
+    }
+}
+/*
+                                                        min 1500px
+*/
+@media screen and (min-width: 1500px)
+{
+    #ColRig
+    {
+        width: 45%;
+    }
+}
+/*
+                                                        min 1700px
+*/
+@media screen and (min-width: 1700px)
+{
+    #ColRig
+    {
+        width: 35%;
+    }
+}
+/*
+                                                        min 2000px
+*/
+@media screen and (min-width: 2000px)
+{
+    #ColRig
+    {
+        width: 25%;
+    }
+}
+/*
+
+
+
+/*
+                                        *TABLEAU PRODUITS*
+*/
+/*
+                                                        MAX 350px
+*/
+@media screen and (max-width: 350px)
+{
+    table
+    {
+        font-size: 80%;
+    }
+}
+
+
+
+/*
+                                        *FORMULAIRE*
+*/
+/*
+                                                        MAX 525px
+*/
+@media screen and (max-width: 525px)
+{
+    fieldset
+    {
+        width: 98%;
+    }
+    #Area /*textarea 'votre demande'*/
+    {
+        width: 85%;
+    }
+}
+/*
+                                                        MAX 460px
+*/
+@media screen and (max-width: 460px)
+{
+    form
+    {
+        font-size: 75%;
+    }
+}
+/*
+                                                        MAX 400px
+*/
+@media screen and (max-width: 400px)
+{
+    form
+    {
+        font-size: 65%;
+    }
+}

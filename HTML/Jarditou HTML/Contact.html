@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="assets/images/jarditou_logo2.png" width="35%" height="auto" alt="Logo Jarditou">
+        </section>
+        <p title="Notre devise">
+            La qualité depuis 70 ans
+        </p>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="Index.html" title="Accueil">Accueil</a>
+            </li>
+            <li>
+                <a href="Tableau.html" title="Produits">Produits</a>
+            </li>
+            <li>
+                <a href="#" title="Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <img src="assets/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!">
+    </section>
+    <h1>
+        Contact
+    </h1>
+    <hr>
+    <p> * Ces zones sont obligatoires </p>
+    <section>
+        <form action="http://bienvu.net/script.php" method="POST">
+            <fieldset>
+                <legend>
+                    Coordonnées
+                </legend>
+                <p>
+                    <article><label for="nom">Nom<sup>*</sup>  </label><input type="text" name="nom" required title="Renseigner votre nom"></article>
+                    <article><label for="prénom">Prénom<sup>*</sup>  </label><input type="text" name="prénom" required title="Renseigner votre prénom"></article>
+                </p>
+                <section>
+                    <label for="Sexe">Sexe<sup>*</sup>  </label>
+                    <input type="radio" name="Sexe" value="Féminin" required> Féminin
+                    <input type="radio" name="Sexe" value="Masculin" required> Masculin
+                </section>
+                <p>
+                    <label for="Date de naissance">Date de Naissances<sup>*</sup>  </label><input type="date" name="Date" value="01-01-2000" required title="Renseigner votre Date de naissance">
+                </p>
+                <section>
+                    <article><label for="Code postal">Code postal  </label><input type="text" name="Code postal" pattern="[0-9]+" title="Code postal (exemple: 75000)"></article>
+                    <article><label for="Adresse">Adresse  </label><input type="text" name="Adresse" title="Adresse"></article>
+                    <article><label for="Ville">Ville  </label><input type="text" name="Ville" title="Ville"></article>
+                    <article><label for="Email">Email<sup>*</sup>  <input type="email" required title="Renseigner votre Email"></article>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Votre demande
+                </legend>
+                <label for="Sujet">Sujet<sup>*</sup>  </label>
+                <select name="Sujet" size="1" required title="Selectionner un sujet">
+                    <option value="Mes commandes"> Mes commandes</option>
+                    <option value="Question">Question sur produit</option>
+                    <option value="Réclamation">Réclamation</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                <p>
+                    <label for="Questions">Questions<sup>*</sup></label>
+                </p>
+                <textarea name="Questions" cols="50" rows="10" required title="Remplissez le champs des questions"></textarea>
+            </fieldset>
+            <p>
+                <input type="checkbox" name="Acceptation" value="Accpete" required title="Veuillez accepter le traitement du formulaire"><label for="Accepte Form">J'accepte le traitement informatique de ce formulaire.</label>
+            </p>
+            <section>
+                <input type="submit" value="Envoyer" title="Envoyer">
+                <input type="reset" value="Annuler" title="Annuler">
+            </section>
+        </form>
+    </section><hr>
+    <footer>
+        <ul class="Mentions">
+            <li>
+                <a href="#">Mentions légales</a>
+            </li>
+            <li>
+                <a href="#">Horaires</a>
+            </li>
+            <li>
+                <a href="#">Plan du site</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
