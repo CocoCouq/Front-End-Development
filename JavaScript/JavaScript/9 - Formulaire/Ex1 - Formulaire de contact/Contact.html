@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice Form JS</title>
+  </head>
+  <body>
+      <form class="container-fluid" action="#" method="post">
+          <fieldset>
+            <div class="col">
+            <legend>Vos coordonnées</legend>
+            <p>
+                * Ces zones sont obligatoires pour envoyer le formulaire.
+            </p>
+            </div>
+                <section id="champs">
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="societe">Société<ins class="obligatoires">*</ins></label><input class="inp col-4" type="text" name="societe" value="" placeholder="Nom de la Société" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="contact">Personne à contacter<ins class="obligatoires">*</ins></label><input class="inp col-4" type="text" name="contact" value="" placeholder="Contact" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="adresse">Adresse de l'entreprise</label><input class="inp col-4" id="adress" type="text" name="adresse" value="" placeholder="Adresse" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="CP">Code postal<ins class="obligatoires">*</ins></label><input id="code" class="inp col-4" type="text" name="CP" value="" placeholder="exemple = '75000'" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="ville">Ville<ins class="obligatoires">*</ins></label><input class="inp col-4" type="text" name="ville" value="" placeholder="Ville" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="mail">E-mail<ins class="obligatoires">*</ins></label><input id="email" class="inp col-4" type="text" name="mail" value="" placeholder="exemple@mail.fr" required>
+                    </div>
+                    <div class="row">
+                        <label class="col-6 col-offset-2" for="phone">Téléphone</label><input class="inp col-4" type="text" name="phone" value="" placeholder="facultatif">
+                    </div>
+                    <div class="row">
+                        <label class="col-2" for="environ">Environnement technique du projet</label><select id="selection" class="col-2 col-offset-2 form-control" name="environ">
+                            <option value="choix">Choisissez</option>
+                            <option value="Access">Access</option>
+                            <option value="Java">Java</option>
+                            <option value="Delphi">Delphi</option>
+                            <option value="Windev">Windev</option>
+                          </select>
+                          <label class="col-2" for="message"></label><textarea id="arEa" name="message" rows="10" cols="100" onclick="ad();"></textarea>
+                    </div>
+                    <div id="send" class="row">
+                          <label for="envoyer"></label><input id="submit" class="col btn btn-primary" type="submit" name="" value="Envoyer" onclick="testcode(); testmail();">
+                          <label for="annul"></label><input class="col btn btn btn-secondary" type="reset" name="annule" value="Effacer">
+                    </div>
+                </section>
+          </fieldset>
+      </form>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+      <script src="ex1.js"></script>
+  </body>
+</html>

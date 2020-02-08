@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jarditou - Accueil</title>
+</head>
+<body class="blue-grey darken-3">
+    <header class="section row z-depth-2 valign-wrapper green lighten-5">
+            <section class="col s6">
+                <img src="assets/images/jarditou_logo2.png" width="100%" height="auto" alt="Logo Jarditou">
+            </section>
+            <aside class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
+                <h4 class="center-align">Tout le Jardin</h4>
+            </aside>
+    </header>
+<!-- NAVBAR -->
+    <section class="section">
+        <nav class="green lighten-5 z-depth-2">
+            <div class="nav-wrapper row">
+                <a href="Index.html" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down">Accueil</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text"><i class="material-icons">dehaze</i></a>
+                <ul class="right hide-on-med-and-down col l4">
+                    <li><a class=" black-text" href="Tableau.html">Produits</a></li>
+                    <li><a class=" grey-text" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav green lighten-5" id="mobile-demo">
+          <section>
+            <li><a href="Index.html"><h4>Accueil</h4></a></li>
+            <li><a href="Tableau.html"><h5>Produits</h5></a></li>
+            <li><a class="grey-text" href="#"><h5>Contact</h5></a></li>
+          </section>
+          <div class="divider"></div>
+          <section class="section">
+            <li><a href="#"><h6>Mentions Légales</h6></a></li>
+            <li><a href="#"><h6>Horaires</h6></a></li>
+            <li><a href="#"><h6>Plan du site</h6></a></li>
+          </section>
+        </ul>
+    </section>
+<!-- PROMO -->
+    <img class="green lighten-5 z-depth-2 section"src="assets/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!">
+    <div class="divider section blue-grey darken-3"></div>
+    <section>
+        <form action="http://bienvu.net/script.php" method="POST">
+            <fieldset class="green lighten-5">
+<!-- COORDONNEES -->
+                <legend class="green lighten-4 card-panel center-align">
+                    <h3>Coordonnées</h3>
+                </legend>
+                <section class="row">
+                    <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
+                </section>
+                <!-- NOM PRENOM -->
+                <section class="row">
+                    <div class="col l3 offset-l2 m4 offset-m1 s5">
+                        <article><label class="flow-text" for="nom">Nom<sup class="red-text">*</sup></label><input id="idNom" type="text" name="nom" title="Renseigner votre nom"></article>
+                    </div>
+                    <div class="col l3 offset-l2 m4 offset-m2 s5 offset-s2">
+                        <article><label class="flow-text" for="prénom">Prénom<sup class="red-text">*</sup></label><input id="idPrenom" type="text" name="prénom" title="Renseigner votre prénom"></article>
+                    </div>
+                    <span id="errNom" class="col l3 offset-l2 m4 offset-m1 s5 red-text"></span>
+                    <span id="errPrenom" class="col l3 offset-l2 m4 offset-m2 s5 offset-s2 red-text"></span>
+                </section>
+                <section class="row">
+                    <!-- DATE -->
+                    <div class="col l3 offset-l2 m4 offset-m1 s7">
+                      <label class="flow-text" for="datenais">Date de naissance</label>
+                      <input id="idDate" type="text" name="datenais" class="datepicker" placeholder="Sélectionner une date"/>
+                    </div>
+                    <!-- SEXE -->
+                    <div class="col l3 offset-l2 m4 offset-m2 s4 offset-s1">
+                        <p>
+                          <label>
+                              <input id="idHomme" name="Sexe" type="radio" value="H"/>
+                              <span>Homme<sup class="red-text">*</sup></span>
+                          </label>
+                       </p>
+                       <p>
+                          <label>
+                              <input id="idFemme" name="Sexe" type="radio" value="F"/>
+                              <span>Femme<sup class="red-text">*</sup></span>
+                          </label>
+                       </p>
+                    </div>
+                    <span id="errDate" class="col l3 offset-l2 m4 offset-m1 s7 red-text"></span>
+                    <span id="errSexe" class="col l3 offset-l2 m4 offset-m2 s4 offset-s1 red-text"></span>
+                </section>
+                <div class="divider section green lighten-5"></div>
+                <section class="row">
+                    <div class="col l8 offset-l2 m10 offset-m1 s12">
+                      <!-- ADRESSE -->
+                        <label class="flow-text" for="Adresse">Adresse</label><input id="idAdress" type="text" name="Adresse" title="Adresse">
+                    </div>
+                    <span id="errAdress" class="col l8 offset-l2 m10 offset-m1 s12 red-text"></span>
+                    <div class="hide-on-med-and-up col s12">
+                        <label class="" for="Complement">Complement d'adresse</label><input id="idCompAdress" type="text" name="Complement" title="Complement">
+                    </div>
+                    <span id="errCompAdress" class="hide-on-med-and-up col s12 red-text"></span>
+                    <!-- CODE POSTAL -->
+                    <div class="col l3 offset-l2 m4 offset-m1 s5">
+                        <label class="flow-text" for="Code postal">Code postal</label><input id="idCode" type="text" name="Code postal" pattern="[0-9]+" title="Code postal (exemple: 75000)">
+                    </div>
+                    <div class="col l3 offset-l2 m4 offset-m2 s6 offset-s1">
+                        <label class="flow-text" for="Ville">Ville</label><input id="idVille" type="text" name="Ville" title="Ville">
+                    </div>
+                    <span id="errCode" class="col l3 offset-l2 m4 offset-m1 s5 red-text"></span>
+                    <span id="errVille" class="col l3 offset-l2 m4 offset-m2 s6 offset-s1 red-text"></span>
+                </section>
+                <!-- EMAIL -->
+                <div class="divider section green lighten-5"></div>
+                <section class="row">
+                    <div class="col l4 offset-l4 m6 offset-m3 s8 offset-s2">
+                      <label class="flow-text" for="Email">Email<sup class="red-text">*</sup><input id="idMail" type="text" title="Renseigner votre Email">
+                    </div>
+                    <span id="errMail" class="col l4 offset-l4 m6 offset-m3 s8 offset-s2 red-text"></span>
+                </section>
+            </fieldset>
+            <div class="divider section blue-grey darken-3"></div>
+<!-- DEMANDE -->
+
+            <fieldset class="green lighten-5">
+              <legend class="green lighten-4 card-panel center-align">
+                  <h3>Votre demande</h3>
+              </legend>
+              <section class="row">
+                  <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
+              </section>
+              <section class="row">
+                <div class="input-field col l3 offset-l2 m4 offset-m1 s5">
+                    <select id="idSujet" name="Sujet">
+                        <option value="0" disabled selected>Sujet</option>
+                        <option value="Commandes">Commandes</option>
+                        <option value="SAV">SAV</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </div>
+                <span id="errSuj" class="input-field col l8 offset-l2 m9 offset-m1 s10 red-text"></span>
+              </section>
+              <div class="row">
+                  <div class="input-field col l8 offset-l2 m10 offset-m1 s12">
+                      <textarea id="textarea1" class="materialize-textarea" name="Message"></textarea>
+                      <label for="textarea1">Message</label>
+                  </div>
+                  <span id="errQuest" class="col l8 offset-l2 m10 offset-m1 s12 red-text"></span>
+              </div>
+            </fieldset>
+                <p class="row">
+                    <label class="col offset-l2 offset-m1 white-text">
+                        <input id="idAccepte" type="checkbox" name="validation"/>
+                        <span>J'accepte le traitement de ce formulaire<sup>*</sup></span>
+                    </label>
+                    <span id="errChckBox" class="col s9 offset-l2 offset-m1 red-text valign-wrapper"></span>
+                </p>
+            <section class="section row">
+              <button id="buttonSend" class="btn waves-effect waves-light col l2 offset-l3 m3 offset-m2 s5 offset-s1" type="submit">
+                  Envoyer<i class="material-icons right">send</i>
+              </button>
+              <button class="red btn waves-effect waves-light col l2 offset-l2 m3 offset-m2 s4 offset-s1" type="reset">
+                  Annuler<i class="material-icons right">clear</i>
+              </button>
+            </section>
+        </form>
+    </section>
+    <!-- FOOTER -->
+        <footer>
+            <nav class="green lighten-5 z-depth-2 row  hide-on-med-and-down">
+                <ul class="row">
+                    <li class="col l2 offset-l2 center-align">
+                        <a class="grey-text" href="#">Mentions légales</a>
+                    </li>
+                    <li class="col l2 offset-l1 center-align">
+                        <a class="grey-text" href="#">Horaires</a>
+                    </li>
+                    <li class="col l2 offset-l1 center-align">
+                        <a class="grey-text" href="#">Plan du site</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+    <script src="assets/js/materialize.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/verif.js"></script>
+    </html>

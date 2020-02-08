@@ -1,0 +1,53 @@
+fieldset
+{
+    height: 92vh;
+}
+label
+{
+    font-size: 2vw;
+    margin-left: 6vw;
+}
+.inp
+{
+    margin-bottom: 2.5vh;
+    border: 1px inset;
+    background-color: #F7F7F7;
+    box-shadow: -1px -1px lightgrey;
+    color: teal;
+}
+textarea
+{
+    width: 28vw;
+    height: 15vw;
+    margin-bottom: 2vh;
+    margin-left: -10vw;
+    border: 1px inset;
+    background-color: #F7F7F7;
+    box-shadow: -1px -1px lightgrey;
+    color: teal;
+}
+#champs
+{
+  margin-left: 8vw;
+  margin-right: 8vw;
+}
+select
+{
+    height: 50%;
+    margin-left: 4vw;
+}
+#send
+{
+    width: 50%;
+    margin-left: 16vw;
+}
+p
+{
+    color: red;
+}
+.obligatoires /*astérisque obligatoire*/
+{
+    text-decoration: inherit;
+    font-size: 80%;
+    color: red;
+}
