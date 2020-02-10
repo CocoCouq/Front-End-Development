@@ -2,6 +2,7 @@
 
 //  Déclarartion des regex
 var filtreVide = /(^$)/;
+var filtreTextChar = /(^[\wéèêëûüîïôàçæœ\s\-\.\,\_\+\=\/\%€@\'\"\\`\!\?\;\[\]])/i;
 var filtreNom = /(^[A-Z]+[a-zA-Z]+\s*)$/;
 var filtreVille = /^[\w\s\-éèêëûüîïôöàœæ\/]+$/;
 var filtrePrenom = /(^[a-zA-Zéèêëôœîïûüàáâæç-]+\s*)$/;
@@ -10,6 +11,7 @@ var filtreAdr = /(^[\wéèêëûüîïôàçæœ\s\-\.\,\_\+\=\/\%€@\'\"\\`\!\
 var filtreDate = /(^[0-3]{1}[0-9]{1}\/[0-1]{1}[0-9]\/[1-2]{1}(0|9)[0-9]{1}[0-9]{1})$/;
 var filtreText = /(^[\wéèêëûüîïôàçæœ\s\-\.\,\_\+\=\/\%€@\'\"\\`\!\?\;\[\]]{50,500}$)/i;
 var filtreCdPost = /(^[0-9]{2}\s([0-9]{3}\s*)$)|(^[0-9]{5}\s*)$|(2A\s*)$|(2B\s*)$|(^$)/;
+
 
 
 //              FONCTION VERIFICATION FORMULAIRE
@@ -22,9 +24,14 @@ element.addEventListener("click", function verif(event)
 {
 //  Nom
     var nom = document.getElementById("idNom").value;    // .value permet de récupérer la valeur du Inuput
-    if(!filtreNom.test(nom))
+    if (!filtreNom.test(nom))
     {
-        document.getElementById("errNom").textContent = "Entrez un nom valide";
+        if (filtrePrenom.test(nom))
+            document.getElementById("errNom").textContent = "Doit commencer par une Majuscule";
+        else if (!filtreVide.test(nom))
+            document.getElementById("errNom").textContent = "Entrez un nom valide (ex : Jean)";
+        else
+            document.getElementById("errNom").textContent = "Renseignez ce champs";
         event.preventDefault();
     }
     else
@@ -33,9 +40,12 @@ element.addEventListener("click", function verif(event)
  // Même opération pour les autres champs
  // Prénom
     var prenom = document.getElementById("idPrenom").value;
-    if(!filtrePrenom.test(prenom))
+    if (!filtrePrenom.test(prenom))
     {
-        document.getElementById("errPrenom").textContent = "Entrez un prénom valide";
+        if (filtreVide.test(prenom))
+            document.getElementById("errPrenom").textContent = "Renseignez le champ";
+        else
+            document.getElementById("errPrenom").textContent = "Entrez un prénom valide (ex : Jean)";
         event.preventDefault();
     }
     else
@@ -45,8 +55,11 @@ element.addEventListener("click", function verif(event)
     var mail = document.getElementById("idMail").value;
     if (!filtreMail.test(mail))
     {
-        document.getElementById("errMail").textContent = "Entrez un email valide";
-        send = false;
+        if (!filtreVide.test(mail))
+            document.getElementById("errMail").textContent = "Entrez un email valide (exemple@mail.com)";
+        else
+            document.getElementById("errMail").textContent = "Renseignez ce champ";
+        event.preventDefault();
     }
     else
             document.getElementById("errMail").innerHTML= "<h6 class=\"green-text\">OK</h6>";
@@ -182,7 +195,12 @@ var elementNom = document.getElementById('idNom');
 elementNom.addEventListener("change", function nom(event){
     var nom = document.getElementById("idNom").value;    // .value permet de récupérer la valeur du Inuput
     if(!filtreNom.test(nom))    // Si test du regex différent de 'true'
-        document.getElementById("errNom").textContent = "Entrez un nom valide";
+    {
+        if (filtrePrenom.test(nom))
+            document.getElementById("errNom").textContent = "Doit contenir une majuscule";
+        else
+            document.getElementById("errNom").textContent = "Entrez un nom valide (ex : DUPONT)";
+    }
     else   // Si test regex égal 'true', j'efface le contenu
         document.getElementById("errNom").innerHTML= "<h6 class=\"green-text\">OK</h6>";
 });
@@ -193,7 +211,7 @@ var elementPrenom = document.getElementById('idPrenom');
 elementPrenom.addEventListener("change", function nom(event){
     var prenom = document.getElementById("idPrenom").value;
     if(!filtrePrenom.test(prenom))
-        document.getElementById("errPrenom").textContent = "Entrez un nom valide";
+        document.getElementById("errPrenom").textContent = "Entrez un prénom valide (ex : Jean)";
     else
         document.getElementById("errPrenom").innerHTML= "<h6 class=\"green-text\">OK</h6>";
 });
@@ -276,7 +294,7 @@ var elementMail = document.getElementById('idMail');
 elementMail.addEventListener("change", function mail(event){
     var mail = document.getElementById("idMail").value;
     if (!filtreMail.test(mail))
-        document.getElementById("errMail").textContent = "Entrez un email valide";
+        document.getElementById("errMail").textContent = "Entrez un email valide (exemple@mail.com)";
     else
         document.getElementById("errMail").innerHTML= "<h6 class=\"green-text\">OK</h6>";
 });
@@ -321,4 +339,45 @@ elementChkBx.addEventListener("change", function accepte(event){
     }
     else
       document.getElementById("errChckBox").textContent = "";
+});
+
+// EVENEMENTS INPUT taille
+var elementMess1 = document.getElementById('textarea1');
+
+elementMess1.addEventListener("input", function areatest(event){
+    var quest = document.getElementById("textarea1").value;
+    var lenrep = quest.length;
+    if (!filtreText.test(quest))
+    {
+        if (filtreTextChar.test(quest))
+        {
+            if (lenrep < 51)
+                document.getElementById("errQuest").textContent = `${51 - lenrep} caractères minimum`;
+            else if (lenrep >= 500)
+                document.getElementById("errQuest").textContent = `${lenrep} caractères (500max)`;
+        }
+    }
+    else
+        document.getElementById("errQuest").textContent = "";
+});
+
+var elementAdr1 = document.getElementById('idAdress');
+
+elementAdr1.addEventListener("input", function areatest(event){
+    var adress = document.getElementById("idAdress").value;
+    var lenrep = adress.length;
+    if (!filtreText.test(adress))
+    {
+        if (filtreTextChar.test(adress))
+        {
+            if (lenrep < 8)
+                document.getElementById("errAdress").textContent = `${9 - lenrep} caractères minimum`;
+            else if (lenrep >= 200)
+                document.getElementById("errAdress").textContent = `${lenrep} caractères (200max)`;
+            else
+                document.getElementById("errAdress").textContent = "";
+        }
+    }
+    else
+        document.getElementById("errQuest").textContent = "";
 });
