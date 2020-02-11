@@ -29,6 +29,7 @@
                 </ul>
             </div>
         </nav>
+        <!-- Side Nav -->
         <ul class="sidenav green lighten-5" id="mobile-demo">
           <section>
             <li><a href="Index.html"><h4>Accueil</h4></a></li>
@@ -36,6 +37,7 @@
             <li><a class="grey-text" href="#"><h5>Contact</h5></a></li>
           </section>
           <div class="divider"></div>
+          <!-- Footer à partir de m size -->
           <section class="section">
             <li><a href="#"><h6>Mentions Légales</h6></a></li>
             <li><a href="#"><h6>Horaires</h6></a></li>
@@ -49,31 +51,29 @@
     <section>
         <form action="http://bienvu.net/script.php" method="POST">
             <fieldset class="green lighten-5">
-<!-- COORDONNEES -->
+<!-- ** COORDONNEES ** -->
                 <legend class="green lighten-4 card-panel center-align">
                     <h3>Coordonnées</h3>
                 </legend>
                 <section class="row">
                     <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
                 </section>
-                <!-- NOM PRENOM -->
+    <!-- NOM PRENOM -->
                 <section class="row">
                     <div class="col l3 offset-l2 m4 offset-m1 s5">
                         <article id="divNom"><label class="flow-text" for="nom">Nom<sup class="red-text">*</sup></label><input id="idNom" type="text" name="nom" title="Renseigner votre nom"></article>
                     </div>
                     <div class="col l3 offset-l2 m4 offset-m2 s5 offset-s2">
-                        <article><label class="flow-text" for="prénom">Prénom<sup class="red-text">*</sup></label><input id="idPrenom" type="text" name="prénom" title="Renseigner votre prénom"></article>
+                        <article id="divPrenom"><label class="flow-text" for="prénom">Prénom<sup class="red-text">*</sup></label><input id="idPrenom" type="text" name="prénom" title="Renseigner votre prénom"></article>
                     </div>
-                    <span id="errNom" class="col l3 offset-l2 m4 offset-m1 s5 red-text"></span>
-                    <span id="errPrenom" class="col l3 offset-l2 m4 offset-m2 s5 offset-s2 red-text"></span>
                 </section>
                 <section class="row">
-                    <!-- DATE -->
+    <!-- DATE -->
                     <div class="col l3 offset-l2 m4 offset-m1 s7">
-                      <label class="flow-text" for="datenais">Date de naissance</label>
+                      <label class="flow-text" for="datenais">Date de naissance<sup class="red-text">*</sup></label>
                       <input id="idDate" type="text" name="datenais" class="datepicker" placeholder="Sélectionner une date"/>
                     </div>
-                    <!-- SEXE -->
+    <!-- SEXE -->
                     <div class="col l3 offset-l2 m4 offset-m2 s4 offset-s1">
                         <p>
                           <label>
@@ -82,47 +82,40 @@
                           </label>
                        </p>
                        <p>
-                          <label>
+                          <label id="divSex">
                               <input id="idFemme" name="Sexe" type="radio" value="F"/>
                               <span>Femme<sup class="red-text">*</sup></span>
                           </label>
                        </p>
                     </div>
-                    <span id="errDate" class="col l3 offset-l2 m4 offset-m1 s7 red-text"></span>
-                    <span id="errSexe" class="col l3 offset-l2 m4 offset-m2 s4 offset-s1 red-text"></span>
                 </section>
                 <div class="divider section green lighten-5"></div>
                 <section class="row">
+    <!-- ADRESSE -->
                     <div class="col l8 offset-l2 m10 offset-m1 s12">
-                      <!-- ADRESSE -->
-                        <label class="flow-text" for="Adresse">Adresse</label><input id="idAdress" type="text" name="Adresse" title="Adresse">
+                        <article id="divAdre"><label class="flow-text" for="Adresse">Adresse</label><input id="idAdress" type="text" name="Adresse" title="Adresse"></article>
                     </div>
-                    <span id="errAdress" class="col l8 offset-l2 m10 offset-m1 s12 red-text"></span>
                     <div class="hide-on-med-and-up col s12">
                         <label class="" for="Complement">Complement d'adresse</label><input id="idCompAdress" type="text" name="Complement" title="Complement">
                     </div>
-                    <span id="errCompAdress" class="hide-on-med-and-up col s12 red-text"></span>
-                    <!-- CODE POSTAL -->
+    <!-- CODE POSTAL -->
                     <div class="col l3 offset-l2 m4 offset-m1 s5">
-                        <label class="flow-text" for="Code postal">Code postal</label><input id="idCode" type="text" name="Code postal" pattern="[0-9]+" title="Code postal (exemple: 75000)">
+                        <article id="divCode"><label class="flow-text" for="Code postal">Code postal</label><input id="idCode" type="text" name="Code postal" title="Code postal (exemple: 75000)"></article>
                     </div>
                     <div class="col l3 offset-l2 m4 offset-m2 s6 offset-s1">
-                        <label class="flow-text" for="Ville">Ville</label><input id="idVille" type="text" name="Ville" title="Ville">
+                        <article id="divVille"><label class="flow-text" for="Ville">Ville</label><input id="idVille" type="text" name="Ville" title="Ville"></article>
                     </div>
-                    <span id="errCode" class="col l3 offset-l2 m4 offset-m1 s5 red-text"></span>
-                    <span id="errVille" class="col l3 offset-l2 m4 offset-m2 s6 offset-s1 red-text"></span>
                 </section>
-                <!-- EMAIL -->
+    <!-- EMAIL -->
                 <div class="divider section green lighten-5"></div>
                 <section class="row">
                     <div class="col l4 offset-l4 m6 offset-m3 s8 offset-s2">
-                      <label class="flow-text" for="Email">Email<sup class="red-text">*</sup><input id="idMail" type="text" name="Email" title="Renseigner votre Email">
+                      <article id="divMail"><label class="flow-text" for="Email">Email<sup class="red-text">*</sup><input id="idMail" type="text" name="Email" title="Renseigner votre Email"></article>
                     </div>
-                    <span id="errMail" class="col l4 offset-l4 m6 offset-m3 s8 offset-s2 red-text"></span>
                 </section>
             </fieldset>
             <div class="divider section blue-grey darken-3"></div>
-<!-- DEMANDE -->
+<!-- ** DEMANDE ** -->
 
             <fieldset class="green lighten-5">
               <legend class="green lighten-4 card-panel center-align">
@@ -132,6 +125,7 @@
                   <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
               </section>
               <section class="row">
+    <!-- SUJET -->
                 <div class="input-field col l3 offset-l2 m4 offset-m1 s5">
                     <select id="idSujet" name="Sujet">
                         <option value="0" disabled selected>Sujet</option>
@@ -140,23 +134,23 @@
                         <option value="Autres">Autres</option>
                     </select>
                 </div>
-                <span id="errSuj" class="input-field col l8 offset-l2 m9 offset-m1 s10 red-text"></span>
               </section>
+    <!-- MESSAGE -->
               <div class="row">
                   <div class="input-field col l8 offset-l2 m10 offset-m1 s12">
                       <textarea id="textarea1" class="materialize-textarea" name="Message"></textarea>
-                      <label for="textarea1">Message</label>
+                      <label for="textarea1" id="divMess">Message</label>
                   </div>
-                  <span id="errQuest" class="col l8 offset-l2 m10 offset-m1 s12 red-text"></span>
               </div>
             </fieldset>
+    <!-- ACCEPTE -->
                 <p class="row">
-                    <label class="col offset-l2 offset-m1 white-text">
+                    <label id="divAccep" class="col offset-l2 offset-m1 white-text">
                         <input id="idAccepte" type="checkbox" name="validation"/>
                         <span>J'accepte le traitement de ce formulaire<sup>*</sup></span>
                     </label>
-                    <span id="errChckBox" class="col s9 offset-l2 offset-m1 red-text valign-wrapper"></span>
                 </p>
+    <!-- SEND RESET -->
             <section class="section row">
               <button id="buttonSend" class="btn waves-effect waves-light col l2 offset-l3 m3 offset-m2 s5 offset-s1" type="submit">
                   Envoyer<i class="material-icons right">send</i>
@@ -187,5 +181,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/materialize.js"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/indexjQuery.js"></script>
+    <script src="assets/js/verif.js"></script>
     </html>
