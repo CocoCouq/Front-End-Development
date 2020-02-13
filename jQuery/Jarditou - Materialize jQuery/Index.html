@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,19 +11,19 @@
 </head>
 <body class="blue-grey darken-3">
     <header class="section row z-depth-2 valign-wrapper green lighten-5">
-            <section class="col s6">
-                <img src="assets/images/jarditou_logo2.png" width="100%" height="auto" alt="Logo Jarditou">
-            </section>
+            <div class="col s6">
+                <img class="responsive-img" src="assets/images/jarditou_logo2.png" title="Logo" alt="Logo Jarditou">
+            </div>
             <aside class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
-                <h4 class="center-align">Tout le Jardin</h4>
+                <h2 id="slogan" class="center-align">Tout le Jardin</h2>
             </aside>
     </header>
 <!-- NAVBAR -->
     <section class="section">
         <nav class="green lighten-5 z-depth-2">
             <div class="nav-wrapper row">
-                <a href="#" class="brand-logo grey-text col l3 offset-l1 hide-on-med-and-down">Accueil</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text"><i class="material-icons">dehaze</i></a>
+                <a href="#" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down">Accueil</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">dehaze</i></a>
                 <ul class="right hide-on-med-and-down col l4">
                     <li><a class=" black-text" href="Tableau.html">Produits</a></li>
                     <li><a class=" black-text" href="Contact.html">Contact</a></li>
@@ -32,7 +33,7 @@
         <!-- Side Nav -->
         <ul class="sidenav green lighten-5" id="mobile-demo">
           <section>
-            <li><a class="grey-text" href="#"><h4>Accueil</h4></a></li>
+            <li><a class="teal-text" href="#"><h4>Accueil</h4></a></li>
             <li><a href="Tableau.html"><h5>Produits</h5></a></li>
             <li><a href="Contact.html"><h5>Contact</h5></a></li>
           </section>
@@ -46,15 +47,15 @@
         </ul>
     </section>
 <!-- PROMO -->
-    <img class="green lighten-5 z-depth-2 section"src="assets/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!">
+    <div class="row blue-grey darken-3">
+        <img class="thresponsive-img section col s12" src="assets/images/promotion.jpg" alt="promotion" title="A ne pas manquer !!">
+    </div>
     <h1 class="white-text center-align">Bienvenue</h1>
 <!-- Paragraphes -->
     <div class="z-depth-2 green lighten-5 row">
         <div class="col l7">
             <section>
-                <article>
-                    <h3>L'entreprise</h3>
-                </article>
+                <h3>L'entreprise</h3>
                 <p>
                     Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.
                 </p>
