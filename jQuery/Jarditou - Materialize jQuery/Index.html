@@ -14,103 +14,111 @@
             <div class="col s6">
                 <img class="responsive-img" src="assets/images/jarditou_logo2.png" title="Logo" alt="Logo Jarditou">
             </div>
-            <aside class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
-                <h2 id="slogan" class="center-align">Tout le Jardin</h2>
-            </aside>
+            <section class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
+                <article id="slogan" class="center-align">Tout le Jardin</article>
+            </section>
     </header>
 <!-- NAVBAR -->
     <section class="section">
         <nav class="green lighten-5 z-depth-2">
             <div class="nav-wrapper row">
-                <a href="#" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down">Accueil</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">dehaze</i></a>
+                <a href="#" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down" title="Acceuil">Accueil</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text" title="Menu"><i class="material-icons">dehaze</i></a>
                 <ul class="right hide-on-med-and-down col l4">
-                    <li><a class=" black-text" href="Tableau.html">Produits</a></li>
-                    <li><a class=" black-text" href="Contact.html">Contact</a></li>
+                    <li><a class=" black-text" href="Tableau.html" title="Produits">Produits</a></li>
+                    <li><a class=" black-text" href="Contact.html" title="Contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Side Nav -->
-        <ul class="sidenav green lighten-5" id="mobile-demo">
-          <section>
-            <li><a class="teal-text" href="#"><h4>Accueil</h4></a></li>
-            <li><a href="Tableau.html"><h5>Produits</h5></a></li>
-            <li><a href="Contact.html"><h5>Contact</h5></a></li>
-          </section>
-          <div class="divider"></div>
-          <!-- Footer à partir de m size -->
-          <section class="section">
-            <li><a href="#"><h6>Mentions Légales</h6></a></li>
-            <li><a href="#"><h6>Horaires</h6></a></li>
-            <li><a href="#"><h6>Plan du site</h6></a></li>
-          </section>
-        </ul>
+        <div aria-label="mobile-demo" role="navigation">
+            <ul class="sidenav green lighten-5" id="mobile-demo">
+                <li><a href="#" title="Accueil">Accueil</a></li>
+                <li><a href="Tableau.html" title="Produits">Produits</a></li>
+                <li><a href="Contact.html" title="Contact">Contact</a></li>
+                <li class="divider section teal"></li>
+                <!-- Footer à partir de m size -->
+                <li><a href="#" title="Mentions">Mentions Légales</a></li>
+                <li><a href="#" title="Horaires">Horaires</a></li>
+                <li><a href="#" title="Plan">Plan du site</a></li>
+            </ul>
+        </div>
     </section>
 <!-- PROMO -->
-    <div class="row blue-grey darken-3">
-        <img class="thresponsive-img section col s12" src="assets/images/promotion.jpg" alt="promotion" title="A ne pas manquer !!">
+    <div class="row blue-grey darken-3" role="region">
+        <img class="responsive-img section col s12" src="assets/images/promotion.jpg" alt="Promotion" title="Promotion">
     </div>
-    <h1 class="white-text center-align">Bienvenue</h1>
+    <div aria-labelledby="titrePage" role="complementary">
+        <h1 id="titrePage" class="white-text center-align">Bienvenue</h1>
+    </div>
 <!-- Paragraphes -->
     <div class="z-depth-2 green lighten-5 row">
-        <div class="col l7">
+        <main class="col l7">
             <section>
-                <h3>L'entreprise</h3>
-                <p>
-                    Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.
-                </p>
-                <p>
-                    Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.
-                </p>
-                <p>
-                    Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie.
-                </p>
-            </section>
-            <section>
+                <h2>L'entreprise</h2>
                 <article>
-                    <h3>Qualité</h3>
+                    <p>
+                        Notre entreprise familiale met tout son savoir-faire à votre
+                        disposition dans le domaine du jardin et du paysagisme.
+                    </p>
+                    <p>
+                        Créée il y a 70 ans, notre entreprise vend fleurs, arbustes,
+                        matériel à main et motorisés.
+                    </p>
+                    <p>
+                        Implantés à Amiens, nous intervenons dans tout le département de la Somme :
+                        Albert, Doullens, Péronne, Abbeville, Corbie.
+                    </p>
                 </article>
-                <p>
-                    Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.
-                </p>
-                <p>
-                    Vous serez séduit par notre expertise, nos compétences et notre sérieux.
-                </p>
             </section>
             <section>
+                <h2>Qualité</h2>
                 <article>
-                    <h3>Devis gratuit</h3>
+                    <p>
+                        Nous mettons à votre disposition un service personnalisé,
+                        avec 1 seul interlocuteur durant tout votre projet.
+                    </p>
+                    <p>
+                        Vous serez séduit par notre expertise, nos compétences et notre sérieux.
+                    </p>
                 </article>
-                <p>
-                    Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.
-                </p>
             </section>
-        </div>
+            <section>
+                <h2>Devis gratuit</h2>
+                <article>
+                    <p>
+                        Vous pouvez bien sûr contacter pour de plus amples informations
+                        ou pour une demande d’intervention. Vous souhaitez un devis ?
+                        Nous vous le réalisons gratuitement.
+                    </p>
+                </article>
+            </section>
+        </main>
 <!-- Colonne de Droite -->
         <div class="section">
         <aside class="col l3 offset-l1 hide-on-med-and-down">
             <section class="section z-depth-1 green lighten-5 valign-wrapper row">
                 <div class="col s7">
-                  <img class="circle z-depth-1" src="assets/images/7.jpg" width="100%" height="100%">
+                    <img class="imgCol circle z-depth-1" src="assets/images/7.jpg" title="Produit1" alt="Produit1">
                 </div>
                 <div class="col s3 offset-s1">
-                  <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
+                    <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
                 </div>
             </section>
             <section class="section z-depth-1 green lighten-5 valign-wrapper row">
                 <div class="col s7">
-                  <img class="circle z-depth-1" src="assets/images/11.jpg" width="100%" height="100%">
+                    <img class="imgCol circle z-depth-1" src="assets/images/11.jpg" title="Produit2" alt="Produits2">
                 </div>
                 <div class="col s3 offset-s1">
-                  <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
+                    <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
                 </div>
             </section>
             <section class="section z-depth-1 green lighten-5 valign-wrapper row">
                 <div class="col s7">
-                  <img class="circle z-depth-1" src="assets/images/12.jpg" width="100%" height="100%">
+                    <img class="imgCol circle z-depth-1" src="assets/images/12.jpg" title="Produit3" alt="Produits3">
                 </div>
                 <div class="col s3 offset-s1">
-                  <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
+                    <a class="btn-floating btn-small waves-effect waves-light blue-grey darken-3" href="Tableau.html"><i class="material-icons">add_shopping_cart</i></a>
                 </div>
             </section>
         </aside>
@@ -118,16 +126,16 @@
     </div>
 <!-- FOOTER -->
     <footer>
-        <nav class="green lighten-5 z-depth-2 row  hide-on-med-and-down">
+        <nav class="green lighten-5 z-depth-2 row hide-on-med-and-down" aria-label="navFooter">
             <ul class="col offset-s1">
                 <li>
-                    <a class="grey-text" href="#">Mentions légales</a>
+                    <a class="black-text" href="#" title="Mentions">Mentions légales</a>
                 </li>
                 <li>
-                    <a class="grey-text" href="#">Horaires</a>
+                    <a class="black-text" href="#" title="Horaires">Horaires</a>
                 </li>
                 <li>
-                    <a class="grey-text" href="#">Plan du site</a>
+                    <a class="black-text" href="#" title="Plan">Plan du site</a>
                 </li>
             </ul>
         </nav>

@@ -2,3 +2,32 @@
 {
     font-size: 4vw;
 }
+
+.imgCol
+{
+    width: 100%;
+    height: auto;
+}
+
+.chpObli
+{
+    padding-left: 1.5vw !important;
+    color: #DB120B;
+}
+
+#sectionNom
+{
+    margin-top: 2.5vh;
+}
+
+#buttonSend
+{
+    background-color: inherit;
+    background-color: #1D8176;
+}
+
+#buttonReset
+{
+    background-color: inherit;
+    background-color: #E91A0C;
+}

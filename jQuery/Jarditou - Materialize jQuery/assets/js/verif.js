@@ -15,23 +15,19 @@ $(document).ready(function()
     // Tableau d'erreurs
     var tabError = [];
     // Zone d'erreurs
-    $("<span class='erreur' id='erNom'></span>").insertAfter("#divNom");
-    $("<span class='erreur' id='erPrenom'></span>").insertAfter("#divPrenom");
-    $("<span class='erreur' id='erDate'></span>").insertAfter("#idDate");
-    $("<span class='erreur' id='erMail'></span>").insertAfter("#divMail");
-    $("<span class='erreur' id='erAdr'></span>").insertAfter("#divAdre");
-    $("<span class='erreur col s12' id='erSexe'></span>").insertAfter("#divSex");
-    $("<span class='erreur' id='erMess'></span>").insertAfter("#divMess");
-    $("<span class='erreur' id='erCode'></span>").insertAfter("#divCode");
-    $("<span class='erreur' id='erVille'></span>").insertAfter("#divVille");
-    $("<span class='erreur col s9 offset-l2 offset-m1' id='erAccep'></span>").insertAfter("#divAccep");
-    $("<span class='erreur' id='erSubj'></span>").insertAfter("#idSujet");
-    // Text en rouge
-    $(".erreur").css({
-        'color' : 'red'
-    });
-    // Centrer les messages d'erreur
-    $(".erreur").addClass('valign-wrapper');
+    $("<span class='chpObli' id='erNom'></span>").insertAfter("#divNom");
+    $("<span class='chpObli' id='erPrenom'></span>").insertAfter("#divPrenom");
+    $("<span class='chpObli' id='erDate'></span>").insertAfter("#idDate");
+    $("<span class='chpObli' id='erMail'></span>").insertAfter("#divMail");
+    $("<span class='chpObli' id='erAdr'></span>").insertAfter("#divAdre");
+    $("<span class='chpObli col s12' id='erSexe'></span>").insertAfter("#divSex");
+    $("<span class='chpObli' id='erMess'></span>").insertAfter("#divMess");
+    $("<span class='chpObli' id='erCode'></span>").insertAfter("#divCode");
+    $("<span class='chpObli' id='erVille'></span>").insertAfter("#divVille");
+    $("<span class='chpObli col s9 offset-l2 offset-m1' id='erAccep'></span>").insertAfter("#divAccep");
+    $("<span class='chpObli' id='erSubj'></span>").insertAfter("#idSujet");
+    // Centrer les messages d'chpObli
+    $(".chpObli").addClass('valign-wrapper');
 
     // Récupération des valeur dans un tableau des valeurs des inputs
     function declare()
@@ -91,7 +87,7 @@ $(document).ready(function()
         // Récupération des valeurs
         var val = declare();
 
-        // MESSAGE D'ERREUR ON SUBMIT
+        // MESSAGE D'chpObli ON SUBMIT
 // NOM
         tabError['Name'] = !filtreNom.test(val['nom'])
                          ? (filtrePrenom.test(val['nom'])
@@ -157,7 +153,7 @@ $(document).ready(function()
                           ? "<i class=\"material-icons\">report</i>Accepete traitement"
                           : "";
 
-        // Affichages des erreurs on submit
+        // Affichages des chpOblis on submit
         $('#erNom').html(tabError['Name']);
         $('#erPrenom').html(tabError['Fname']);
         $('#erDate').html(tabError['Date']);

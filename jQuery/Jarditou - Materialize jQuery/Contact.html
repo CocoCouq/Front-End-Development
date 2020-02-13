@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/materialize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,142 +11,144 @@
 </head>
 <body class="blue-grey darken-3">
     <header class="section row z-depth-2 valign-wrapper green lighten-5">
-            <section class="col s6">
-                <img src="assets/images/jarditou_logo2.png" width="100%" height="auto" alt="Logo Jarditou">
+            <div class="col s6">
+                <img class="responsive-img" src="assets/images/jarditou_logo2.png" title="Logo" alt="Logo Jarditou">
+            </div>
+            <section class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
+                <article id="slogan" class="center-align">Tout le Jardin</article>
             </section>
-            <aside class="col s4 offset-s2 card blue-grey darken-3 white-text z-depth-1" title="Notre devise">
-                <h4 class="center-align">Tout le Jardin</h4>
-            </aside>
     </header>
 <!-- NAVBAR -->
     <section class="section">
         <nav class="green lighten-5 z-depth-2">
             <div class="nav-wrapper row">
-                <a href="Index.html" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down">Accueil</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger grey-text"><i class="material-icons">dehaze</i></a>
+                <a href="Index.html" class="brand-logo black-text col l3 offset-l1 hide-on-med-and-down" title="Acceuil">Accueil</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text" title="Menu"><i class="material-icons">dehaze</i></a>
                 <ul class="right hide-on-med-and-down col l4">
-                    <li><a class=" black-text" href="Tableau.html">Produits</a></li>
-                    <li><a class=" grey-text" href="#">Contact</a></li>
+                    <li><a class=" black-text" href="Tableau.html" title="Produits">Produits</a></li>
+                    <li><a class=" black-text" href="#" title="Contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Side Nav -->
-        <ul class="sidenav green lighten-5" id="mobile-demo">
-          <section>
-            <li><a href="Index.html"><h4>Accueil</h4></a></li>
-            <li><a href="Tableau.html"><h5>Produits</h5></a></li>
-            <li><a class="grey-text" href="#"><h5>Contact</h5></a></li>
-          </section>
-          <div class="divider"></div>
-          <!-- Footer à partir de m size -->
-          <section class="section">
-            <li><a href="#"><h6>Mentions Légales</h6></a></li>
-            <li><a href="#"><h6>Horaires</h6></a></li>
-            <li><a href="#"><h6>Plan du site</h6></a></li>
-          </section>
-        </ul>
+        <div aria-label="mobile-demo" role="navigation">
+            <ul class="sidenav green lighten-5" id="mobile-demo">
+                <li><a href="Index.html" title="Accueil">Accueil</a></li>
+                <li><a href="Tableau.html" title="Produits">Produits</a></li>
+                <li><a href="#" title="Contact">Contact</a></li>
+                <li class="divider section teal"></li>
+                <!-- Footer à partir de m size -->
+                <li><a href="#" title="Mentions">Mentions Légales</a></li>
+                <li><a href="#" title="Horaires">Horaires</a></li>
+                <li><a href="#" title="Plan">Plan du site</a></li>
+            </ul>
+        </div>
     </section>
 <!-- PROMO -->
-    <img class="green lighten-5 z-depth-2 section"src="assets/images/promotion.jpg" width="100%" height="auto" alt="promotion" title="A ne pas manquer !!">
-    <div class="divider section blue-grey darken-3"></div>
-    <section>
+    <div class="row blue-grey darken-3" role="region">
+        <img class="responsive-img section col s12" src="assets/images/promotion.jpg" alt="Promotion" title="Promotion">
+    </div>
+    <div aria-labelledby="titrePage" role="complementary">
+        <h1 id="titrePage" class="white-text center-align">Contact</h1>
+    </div>
+    <main>
         <form action="http://bienvu.net/script.php" method="POST">
-            <fieldset class="green lighten-5">
+            <div class="green lighten-5">
 <!-- ** COORDONNEES ** -->
-                <legend class="green lighten-4 card-panel center-align">
-                    <h3>Coordonnées</h3>
-                </legend>
-                <section class="row">
-                    <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
-                </section>
+                <h3 class="green lighten-4 card-panel center-align">Coordonnées</h3>
+                <span class="chpObli section">*  Ces champs sont obligatoires</span>
     <!-- NOM PRENOM -->
-                <section class="row">
-                    <div class="col l3 offset-l2 m4 offset-m1 s5">
-                        <article id="divNom"><label class="flow-text" for="nom">Nom<sup class="red-text">*</sup></label><input id="idNom" type="text" name="nom" title="Renseigner votre nom"></article>
-                    </div>
-                    <div class="col l3 offset-l2 m4 offset-m2 s5 offset-s2">
-                        <article id="divPrenom"><label class="flow-text" for="prénom">Prénom<sup class="red-text">*</sup></label><input id="idPrenom" type="text" name="prénom" title="Renseigner votre prénom"></article>
-                    </div>
+                <section id="sectionNom" class="row">
+                    <article class="col l3 offset-l2 m4 offset-m1 s5" id="divNom">
+                        <label class="flow-text black-text" for="idNom">Nom<sup class="red-text">*</sup></label>
+                        <input id="idNom" type="text" name="nom" title="Renseigner votre nom">
+                    </article>
+                    <article class="col l3 offset-l2 m4 offset-m2 s5 offset-s2" id="divPrenom">
+                        <label class="flow-text black-text" for="idPrenom">Prénom<sup class="red-text">*</sup></label>
+                        <input id="idPrenom" type="text" name="prénom" title="Renseigner votre prénom">
+                    </article>
                 </section>
                 <section class="row">
     <!-- DATE -->
-                    <div class="col l3 offset-l2 m4 offset-m1 s7">
-                      <label class="flow-text" for="datenais">Date de naissance<sup class="red-text">*</sup></label>
-                      <input id="idDate" type="text" name="datenais" class="datepicker" placeholder="Sélectionner une date"/>
-                    </div>
+                    <article class="col l3 offset-l2 m4 offset-m1 s7">
+                        <label class="flow-text black-text" for="idDate">Date de naissance<sup class="red-text">*</sup></label>
+                        <input id="idDate" type="text" name="datenais" class="datepicker" placeholder="Sélectionner une date"/>
+                    </article>
     <!-- SEXE -->
-                    <div class="col l3 offset-l2 m4 offset-m2 s4 offset-s1">
+                    <article class="col l3 offset-l2 m4 offset-m2 s4 offset-s1">
                         <p>
-                          <label>
+                          <label for="idHomme">
                               <input id="idHomme" name="Sexe" type="radio" value="H"/>
-                              <span>Homme<sup class="red-text">*</sup></span>
+                              <span class="black-text">Homme<sup class="red-text">*</sup></span>
                           </label>
                        </p>
                        <p>
-                          <label id="divSex">
+                          <label for="idFemme" id="divSex">
                               <input id="idFemme" name="Sexe" type="radio" value="F"/>
-                              <span>Femme<sup class="red-text">*</sup></span>
+                              <span class="black-text">Femme<sup class="red-text">*</sup></span>
                           </label>
                        </p>
-                    </div>
+                   </article>
                 </section>
-                <div class="divider section green lighten-5"></div>
+                <section class="divider section green lighten-5"></section>
                 <section class="row">
     <!-- ADRESSE -->
-                    <div class="col l8 offset-l2 m10 offset-m1 s12">
-                        <article id="divAdre"><label class="flow-text" for="Adresse">Adresse</label><input id="idAdress" type="text" name="Adresse" title="Adresse"></article>
-                    </div>
-                    <div class="hide-on-med-and-up col s12">
-                        <label class="" for="Complement">Complement d'adresse</label><input id="idCompAdress" type="text" name="Complement" title="Complement">
-                    </div>
+                    <article class="col l8 offset-l2 m10 offset-m1 s12" id="divAdre">
+                        <label class="flow-text black-text" for="idAdress">Adresse</label>
+                        <input id="idAdress" type="text" name="Adresse" title="Adresse">
+                    </article>
+                    <article class="hide-on-med-and-up col s12">
+                        <label class="black-text" for="idCompAdress">Complement d'adresse</label>
+                        <input id="idCompAdress" type="text" name="Complement" title="Complement">
+                    </article>
     <!-- CODE POSTAL -->
-                    <div class="col l3 offset-l2 m4 offset-m1 s5">
-                        <article id="divCode"><label class="flow-text" for="Code postal">Code postal</label><input id="idCode" type="text" name="Code postal" title="Code postal (exemple: 75000)"></article>
-                    </div>
-                    <div class="col l3 offset-l2 m4 offset-m2 s6 offset-s1">
-                        <article id="divVille"><label class="flow-text" for="Ville">Ville</label><input id="idVille" type="text" name="Ville" title="Ville"></article>
-                    </div>
+                    <article class="col l3 offset-l2 m4 offset-m1 s5" id="divCode">
+                        <label class="flow-text black-text" for="idCode">Code postal</label>
+                        <input id="idCode" type="text" name="Code_postal" title="Code postal (exemple: 75000)">
+                    </article>
+                    <article class="col l3 offset-l2 m4 offset-m2 s6 offset-s1" id="divVille">
+                        <label class="flow-text black-text" for="idVille">Ville</label>
+                        <input id="idVille" type="text" name="Ville" title="Ville">
+                    </article>
                 </section>
     <!-- EMAIL -->
-                <div class="divider section green lighten-5"></div>
+                <section class="divider section green lighten-5"></section>
                 <section class="row">
-                    <div class="col l4 offset-l4 m6 offset-m3 s8 offset-s2">
-                      <article id="divMail"><label class="flow-text" for="Email">Email<sup class="red-text">*</sup><input id="idMail" type="text" name="Email" title="Renseigner votre Email"></article>
-                    </div>
+                    <article class="col l4 offset-l4 m6 offset-m3 s8 offset-s2" id="divMail">
+                        <label class="flow-text black-text" for="idMail">Email<sup class="red-text">*</sup>
+                        <input id="idMail" type="text" name="Email" title="Renseigner votre Email">
+                    </article>
                 </section>
-            </fieldset>
+            </div>
             <div class="divider section blue-grey darken-3"></div>
 <!-- ** DEMANDE ** -->
 
-            <fieldset class="green lighten-5">
-              <legend class="green lighten-4 card-panel center-align">
-                  <h3>Votre demande</h3>
-              </legend>
-              <section class="row">
-                  <p class="red-text col offset-l2 offset-m1">* Ces champs sont obligatoires</p>
-              </section>
+            <div class="green lighten-5">
+                <h3 class="green lighten-4 card-panel center-align">Votre demande</h3>
+                <span class="chpObli">* Ces champs sont obligatoires</span>
               <section class="row">
     <!-- SUJET -->
-                <div class="input-field col l3 offset-l2 m4 offset-m1 s5">
-                    <select id="idSujet" name="Sujet">
-                        <option value="0" disabled selected>Sujet</option>
-                        <option value="Commandes">Commandes</option>
-                        <option value="SAV">SAV</option>
-                        <option value="Autres">Autres</option>
-                    </select>
-                </div>
+                  <article class="input-field col l3 offset-l2 m4 offset-m1 s5">
+                      <label class="divider green lighten-5" for="select-options-51ae1684-2752-ddf3-adb3-b0c69753cddf">Sujet</label>
+                      <select id="idSujet" name="Sujet">
+                          <option value="0" disabled selected>Sujets<sup>*</sup></option>
+                          <option value="Commandes">Commandes</option>
+                          <option value="SAV">SAV</option>
+                          <option value="Autres">Autres</option>
+                      </select>
+                  </article>
               </section>
     <!-- MESSAGE -->
-              <div class="row">
-                  <div class="input-field col l8 offset-l2 m10 offset-m1 s12">
+              <section class="row">
+                  <article class="input-field col l8 offset-l2 m10 offset-m1 s12">
                       <textarea id="textarea1" class="materialize-textarea" name="Message"></textarea>
-                      <label for="textarea1" id="divMess">Message</label>
-                  </div>
-              </div>
-            </fieldset>
+                      <label for="textarea1" class="black-text" id="divMess">Message<sup class="red-text">*</sup></label>
+                  </article>
+              </section>
+          </div>
     <!-- ACCEPTE -->
                 <p class="row">
-                    <label id="divAccep" class="col offset-l2 offset-m1 white-text">
+                    <label for="idAccepte" id="divAccep" class="col offset-l2 offset-m1 white-text">
                         <input id="idAccepte" type="checkbox" name="validation"/>
                         <span>J'accepte le traitement de ce formulaire<sup>*</sup></span>
                     </label>
@@ -155,24 +158,24 @@
               <button id="buttonSend" class="btn waves-effect waves-light col l2 offset-l3 m3 offset-m2 s5 offset-s1" type="submit">
                   Envoyer<i class="material-icons right">send</i>
               </button>
-              <button class="red btn waves-effect waves-light col l2 offset-l2 m3 offset-m2 s4 offset-s1" type="reset">
+              <button id="buttonReset" class="btn waves-effect waves-light col l2 offset-l2 m3 offset-m2 s4 offset-s1" type="reset">
                   Annuler<i class="material-icons right">clear</i>
               </button>
             </section>
         </form>
-    </section>
+    </main>
     <!-- FOOTER -->
         <footer>
-            <nav class="green lighten-5 z-depth-2 row  hide-on-med-and-down">
-                <ul class="row">
-                    <li class="col l2 offset-l2 center-align">
-                        <a class="grey-text" href="#">Mentions légales</a>
+            <nav class="green lighten-5 z-depth-2 row hide-on-med-and-down" aria-label="navFooter">
+                <ul class="col offset-s1">
+                    <li>
+                        <a class="black-text" href="#" title="Mentions">Mentions légales</a>
                     </li>
-                    <li class="col l2 offset-l1 center-align">
-                        <a class="grey-text" href="#">Horaires</a>
+                    <li>
+                        <a class="black-text" href="#" title="Horaires">Horaires</a>
                     </li>
-                    <li class="col l2 offset-l1 center-align">
-                        <a class="grey-text" href="#">Plan du site</a>
+                    <li>
+                        <a class="black-text" href="#" title="Plan">Plan du site</a>
                     </li>
                 </ul>
             </nav>
